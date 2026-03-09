@@ -7,7 +7,7 @@ export default function ProductDemo() {
     
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>Welcome to JobLinker!</h1>
+        <h1>Welcome to Job-Linker!</h1>
       </header>
       <section className={styles.section}>
         <h2>Revolutionize Your Job Search</h2>

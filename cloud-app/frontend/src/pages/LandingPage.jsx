@@ -68,12 +68,6 @@ const features = [
       'Upload files and monitor pipeline job status live from your dashboard.',
     emoji: '\uD83D\uDCCA',
   },
-  {
-    title: 'Open Source',
-    description:
-      'Fully open source. Fork it, extend it, and contribute back to the community.',
-    emoji: '\uD83D\uDE80',
-  },
 ]
 
 export default function LandingPage() {
@@ -104,7 +98,7 @@ export default function LandingPage() {
             cloud-native pipeline. No servers to maintain &mdash; just results.
           </p>
           <div className={styles.heroCtas}>
-            <Link to="/login" className={styles.btnPrimary}>
+            <Link to="/cloud-app/frontend/src/pages/productDemo.jsx" className={styles.btnPrimary}>
               Get Started
             </Link>
             <a
