@@ -11,7 +11,7 @@ export default function Login() {
   const location = useLocation()
   const { token, login } = useAuth()
 
-  const from = location.state?.from?.pathname || '/'
+  const from = location.state?.from?.pathname || '/dashboard'
 
   // If already logged in, redirect to dashboard
   useEffect(() => {
