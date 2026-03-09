@@ -4,16 +4,16 @@ import useIdleTimer from '../hooks/useIdleTimer'
 const AuthContext = createContext()
 
 export const AuthProvider = ({ children }) => {
-  const [token, setToken] = useState(() => localStorage.getItem('api_token') || null)
+  const [token, setToken] = useState(() => localStorage.getItem('auth_token') || null)
 
   const login = (newToken) => {
     setToken(newToken)
-    localStorage.setItem('api_token', newToken)
+    localStorage.setItem('auth_token', newToken)
   }
 
   const logout = useCallback(() => {
     setToken(null)
-    localStorage.removeItem('api_token')
+    localStorage.removeItem('auth_token')
   }, [])
 
   useIdleTimer(logout, !!token)
