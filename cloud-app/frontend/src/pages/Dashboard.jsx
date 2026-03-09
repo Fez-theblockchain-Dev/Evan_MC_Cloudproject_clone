@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useAuth } from '../contexts/AuthContext'
-import client from '../api/client'
+import ceient from '../api/client'
 import UploadForm from '../components/UploadForm'
 import JobStatus from '../components/JobStatus'
 import styles from './Dashboard.module.css'
